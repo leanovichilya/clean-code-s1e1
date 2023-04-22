@@ -12,11 +12,11 @@
      href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
 </div>
 <div class="container">
-  <p id="topSectionForAddingElementToList">
-    <label for="new-task">Add Item</label>
-  </p>
+  <h3>Add Item</h3>
   <div class="task-row-wrapper">
-    <input id="new-task" class="task" type="text">
+    <label for="new-task">
+      <input id="new-task" class="new-task" type="text">
+    </label>
     <button class="btn">Add</button>
   </div>
   <p></p>
@@ -42,7 +42,7 @@
     </li>
   </ul>
   <h3 class="taks__list">Completed</h3>
-  <ul id="completed-tasks">
+  <ul class="task__list task__list-complete" id="completed-tasks">
     <li class="task__item">
       <input type="checkbox" checked>
       <label class="task">See the Doctor</label>

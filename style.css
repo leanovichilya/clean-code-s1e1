@@ -22,6 +22,44 @@ input, button {
   outline: none;
 }
 
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+input[type="checkbox"] {
+  margin: 0 10px;
+}
+
+input[type="text"]:focus {
+  color: #333;
+}
+
 .btn {
   background: none;
   border: 0px;
@@ -61,6 +99,10 @@ input, button {
   margin: 0 auto 0;
 }
 
+.new-task {
+  width: 90%;
+}
+
 .task {
   width: 56%;
   display: inline-block;
@@ -72,8 +114,7 @@ input, button {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -83,63 +124,14 @@ label[for='new-task'] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
-}
-
-input[type="text"]:focus {
-  color: #333;
-}
-
 /* New Task */
 label[for='new-task'] {
+  width: 100%;
   display: block;
-  margin: 0 0 20px;
-}
-
-input#new-task {
-  width: 318px;
+  padding: 30px 0 10px;
 }
 
 /* Task list */
-li {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-li > * {
-  vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
-  margin: 0 10px;
-}
-
-li > label {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-}
-
-li > input[type="text"] {
-  width: 226px
-}
-
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -151,21 +143,21 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task__list-complete label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+li.editMode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+li.editMode label {
   display: none;
 }

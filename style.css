@@ -5,28 +5,57 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+}
+
+.btn {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #3a3A3a;
+}
+
+/* Logo */
+.logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-img {
-  width: 100%;
-}
-
-.aaa .more_inf {
+.logo__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .logo {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+/* Container */
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,33 +69,6 @@ img {
 
 .task-row-wrapper {
   display: flex;
-}
-
-ul {
-  margin: 0;
-  padding: 0px;
-}
-
-li, h3 {
-  list-style: none;
-}
-
-input, button {
-  outline: none;
-}
-
-button {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
-button:hover {
-  color: #3a3A3a;
 }
 
 /* Heading */
@@ -150,7 +152,7 @@ button.delete img:hover {
 
 /* Completed */
 ul#completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
